@@ -128,16 +128,20 @@ enum StationTypeName: String, Codable {
     case аэропорт = "аэропорт"
     case вокзал = "вокзал"
     case станция = "станция"
+    case автобуснаяОстановка = "автобусная остановка"
+    case автостанция = "автостанция"
+    case остановочныйПункт = "остановочный пункт"
+    case разъезд = "разъезд"
 }
 
-enum TransportType: String, Codable {
-    case bus = "bus"
-    case plane = "plane"
-    case train = "train"
-    case suburban = "suburban"
-    case water = "water"
-    case helicopter = "helicopter"
-}
+//enum TransportType: String, Codable {
+//    case bus = "bus"
+//    case plane = "plane"
+//    case train = "train"
+//    case suburban = "suburban"
+//    case water = "water"
+//    case helicopter = "helicopter"
+//}
 
 // MARK: - Thread
 struct Thread: Codable {

@@ -47,6 +47,45 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zZT-aq-cwy">
                                 <rect key="frame" x="7" y="155" width="380" height="663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="stationCell" rowHeight="70" id="Wzm-gS-A1b" customClass="StationTableViewCell" customModule="schedule" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="380" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wzm-gS-A1b" id="Bcd-hj-Xf1">
+                                            <rect key="frame" x="0.0" y="0.0" width="380" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название станции" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siP-Zc-Cwz">
+                                                    <rect key="frame" x="20" y="11" width="147" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регион" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIS-Bf-kxd">
+                                                    <rect key="frame" x="20" y="38" width="48" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="hVJ-vs-cVQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="siP-Zc-Cwz" firstAttribute="top" secondItem="Bcd-hj-Xf1" secondAttribute="topMargin" id="8KC-rm-8dU"/>
+                                                <constraint firstItem="hIS-Bf-kxd" firstAttribute="top" secondItem="siP-Zc-Cwz" secondAttribute="bottom" constant="6" id="K3B-4p-dSk"/>
+                                                <constraint firstItem="hIS-Bf-kxd" firstAttribute="leading" secondItem="Bcd-hj-Xf1" secondAttribute="leadingMargin" id="KAh-wR-c3M"/>
+                                                <constraint firstItem="hIS-Bf-kxd" firstAttribute="bottom" secondItem="Bcd-hj-Xf1" secondAttribute="bottomMargin" id="MSj-ua-EVI"/>
+                                                <constraint firstItem="siP-Zc-Cwz" firstAttribute="leading" secondItem="Bcd-hj-Xf1" secondAttribute="leadingMargin" id="OAa-vN-mdO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="stationCell"/>
+                                        <connections>
+                                            <outlet property="regionLabel" destination="hIS-Bf-kxd" id="gZk-gm-XET"/>
+                                            <outlet property="stationLabel" destination="siP-Zc-Cwz" id="S9o-3B-qPg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Y6W-OH-hqX" id="gak-wN-bP1"/>
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="YC3-eH-clu"/>

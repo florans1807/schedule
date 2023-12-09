@@ -15,18 +15,23 @@ class CitiesViewController: UIViewController {
     @IBOutlet weak var directionLabel: UILabel!
     
     var countries: [Country] = []
+    var nearestStations: [Station2] = []
+    //var dictOfStations: [String:[String]] = [:]
+        
+    var originalData: [SearchedStation] = []
+    var filteredData: [SearchedStation] = []
     
-//    var originalData: [[String]] = [[]]
-//    var filteredData: [[String]] = [[]]
+    var originalDataNearest: [SearchedStation] = []
+    var filteredDataNearest: [SearchedStation] = []
     
-    var originalData: [String] = []
-    var filteredData: [String] = []
+    //var sortedStations: [Station] = []
+    //var stations: [Station] = []
     
     var isFrom = false
     
     var placeholder: String = ""
     
-    var delegate: SetSelectedDirection?
+    var delegate: SetSelectedDirectionOrDate?
         
     lazy var locationManager: CLLocationManager = {
         var manager = CLLocationManager()
@@ -39,11 +44,11 @@ class CitiesViewController: UIViewController {
         super.viewDidLoad()
         locationManager.requestWhenInUseAuthorization()
         
-        getNearestStations()
+        //getNearestStations()
+        getAllStations()
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         searchBar.delegate = self
         
@@ -61,11 +66,18 @@ class CitiesViewController: UIViewController {
             for region in country.regions {
                 for settlement in region.settlements {
                     for station in settlement.stations {
-                        //originalData.append([station.title, region.title])
-                        originalData.append(station.title)
+                        let stationId = UUID().uuidString
+                        originalData.append(SearchedStation(id: stationId, name: station.title, code: station.codes.yandexCode, regionTitle: region.title, stationType: station.stationType))
                     }
                 }
             }
+        }
+    }
+    
+    func getListOfNearestStations() {
+        for station in nearestStations {
+            let stationId = UUID().uuidString
+            originalDataNearest.append(SearchedStation(id: stationId, name: station.title, code: station.code, regionTitle: station.shortTitle ?? "", stationType: station.stationType))
         }
     }
     
@@ -84,15 +96,20 @@ class CitiesViewController: UIViewController {
         ApiClient.shared.getNearestStations { [weak self] values in
             DispatchQueue.main.async {
                 guard let self else { return }
-                self.countries = values
-                self.getListOfStations()
+                self.nearestStations = values
+                self.getListOfNearestStations()
                 self.tableView.reloadData()
             }
         }
     }
     
     @IBAction func closeStationsSearch(_ sender: Any) {
+        dismissStationsSearchList()
+    }
+    
+    func dismissStationsSearchList() {
         self.dismiss(animated: true)
+        delegate?.resignTextFields()
     }
 }
 
@@ -106,33 +123,35 @@ extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        //tableView.
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "stationCell") as! StationTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "stationCell", for: indexPath) as! StationTableViewCell
         if searchBar.text != "" {
             //RETURN CELLS CREATED FROM FILTERED DATA
-            cell.textLabel?.text = filteredData[indexPath.row]//.first
-            //cell.detailTextLabel?.text = filteredData[indexPath.row].last
+            let station = filteredData[indexPath.row]
+            cell.stationLabel.text = station.name
+            cell.regionLabel.text = station.stationType.rawValue + " " + station.regionTitle
             return cell
         }
         //RETURN CELLS CREATED FROM ORIGINAL DATA
-        cell.textLabel?.text = originalData[indexPath.row]//.first
-        //cell.detailTextLabel?.text = originalData[indexPath.row].last
+        let station = originalData[indexPath.row]
+        cell.stationLabel.text = station.name
+        cell.regionLabel.text = station.stationType.rawValue + " " + station.regionTitle
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if searchBar.text != "" {
             //HANDLE ROW SELECTION FROM FILTERED DATA
-            delegate?.setDirection(direction: filteredData[indexPath.row], isFrom: isFrom)
-            self.dismiss(animated: true)
+            delegate?.setDirection(direction: filteredData[indexPath.row].name, code: filteredData[indexPath.row].code, isFrom: isFrom)
+            dismissStationsSearchList()
+
+        } else {
+            //HANDLE ROW SELECTION FROM ORIGINAL DATA
+            delegate?.setDirection(direction: originalData[indexPath.row].name, code: originalData[indexPath.row].code, isFrom: isFrom)
+            dismissStationsSearchList()
+
         }
-        //HANDLE ROW SELECTION FROM ORIGINAL DATA
-        if let delegate = delegate{
-            delegate.setDirection(direction: originalData[indexPath.row], isFrom: isFrom)
-        }else{
-            print("The delegate is nil")
-        }
-        
-        self.dismiss(animated: true)
     }
     
 }
@@ -146,11 +165,26 @@ extension CitiesViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         let searchString = searchBar.text
         filteredData = originalData.filter({ (item) -> Bool in
-            //let value: NSString = item.first! as NSString
-            let value: NSString = item as NSString
+            let value: NSString = item.name as NSString
             return (value.range(of: searchString!, options: .caseInsensitive).location != NSNotFound)
         })
         tableView.reloadData()
     }
 
+}
+
+struct SearchedStation {
+    let id: String
+    let name: String
+    let code: String
+    let regionTitle: String
+    let stationType: StationType
+    
+    init(id: String, name: String, code: String, regionTitle: String, stationType: StationType) {
+        self.id = id
+        self.name = name
+        self.code = code
+        self.regionTitle = regionTitle
+        self.stationType = stationType
+    }
 }

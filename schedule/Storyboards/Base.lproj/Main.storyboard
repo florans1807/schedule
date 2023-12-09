@@ -91,68 +91,68 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4N-wC-Fer">
                                         <rect key="frame" x="0.0" y="140" width="361" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvy-8l-0t0">
-                                                <rect key="frame" x="0.0" y="0.0" width="117.66666666666667" height="40"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvy-8l-0t0">
+                                                <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Сегодня"/>
                                                 <connections>
-                                                    <action selector="todayBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HEg-vz-89S"/>
+                                                    <action selector="selectDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p7R-tu-F9v"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdI-Lz-wWT">
-                                                <rect key="frame" x="117.66666666666666" y="0.0" width="1" height="40"/>
+                                                <rect key="frame" x="119.66666666666666" y="0.0" width="1" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="1" id="yh6-gM-5SO"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iR4-II-SI1">
-                                                <rect key="frame" x="118.66666666666666" y="0.0" width="119.66666666666666" height="40"/>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iR4-II-SI1">
+                                                <rect key="frame" x="120.66666666666666" y="0.0" width="119.66666666666666" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Завтра"/>
                                                 <connections>
-                                                    <action selector="tomorrowBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MTE-Z7-OkO"/>
+                                                    <action selector="selectDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="an4-9z-lO8"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s20-tP-wy2">
-                                                <rect key="frame" x="238.33333333333334" y="0.0" width="1" height="40"/>
+                                                <rect key="frame" x="240.33333333333331" y="0.0" width="1" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="1" id="TBk-MM-rq1"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7i-aF-nt7">
-                                                <rect key="frame" x="239.33333333333334" y="0.0" width="121.66666666666666" height="40"/>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7i-aF-nt7">
+                                                <rect key="frame" x="241.33333333333329" y="0.0" width="119.66666666666666" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="titleEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <inset key="imageEdgeInsets" minX="80" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="95" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Дата" image="calendar.circle.fill" catalog="system">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="dateBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzZ-xg-ayr"/>
+                                                    <action selector="selectDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q0e-HW-D13"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Z7i-aF-nt7" firstAttribute="width" secondItem="iR4-II-SI1" secondAttribute="width" multiplier="1.01681" id="90m-Ai-Qot"/>
+                                            <constraint firstItem="Z7i-aF-nt7" firstAttribute="width" secondItem="iR4-II-SI1" secondAttribute="width" id="90m-Ai-Qot"/>
                                             <constraint firstAttribute="height" constant="40" id="GhV-lx-Xfp"/>
-                                            <constraint firstItem="iR4-II-SI1" firstAttribute="width" secondItem="pvy-8l-0t0" secondAttribute="width" multiplier="1.01681" id="Oag-2O-xfd"/>
+                                            <constraint firstItem="iR4-II-SI1" firstAttribute="width" secondItem="pvy-8l-0t0" secondAttribute="width" id="Oag-2O-xfd"/>
                                             <constraint firstItem="FdI-Lz-wWT" firstAttribute="width" secondItem="s20-tP-wy2" secondAttribute="width" id="dxL-2n-ukP"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gl5-G9-wb2">
                                         <rect key="frame" x="0.0" y="190" width="361" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaS-8F-553">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaS-8F-553">
                                                 <rect key="frame" x="0.0" y="0.0" width="97" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -165,10 +165,10 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="anyTransportTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wJK-1c-usH"/>
+                                                    <action selector="selectTransport:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNk-cl-JKe"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obg-e5-3es">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obg-e5-3es">
                                                 <rect key="frame" x="107" y="0.0" width="56" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <constraints>
@@ -183,10 +183,10 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="byPlaneTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUf-bW-62W"/>
+                                                    <action selector="selectTransport:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6U-y0-Pj6"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezz-S0-LUo">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezz-S0-LUo">
                                                 <rect key="frame" x="173" y="0.0" width="56" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <constraints>
@@ -201,10 +201,10 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="byTrainTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UyZ-86-icB"/>
+                                                    <action selector="selectTransport:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHy-09-aWN"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90X-3j-L0H">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90X-3j-L0H">
                                                 <rect key="frame" x="239" y="0.0" width="56" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <constraints>
@@ -219,10 +219,10 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="subwayTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ifU-9t-Vf4"/>
+                                                    <action selector="selectTransport:" destination="BYZ-38-t0r" eventType="touchUpInside" id="As0-5w-OcU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJw-ru-jcM">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJw-ru-jcM">
                                                 <rect key="frame" x="305" y="0.0" width="56" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <constraints>
@@ -237,7 +237,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="byBusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EFe-uj-kOe"/>
+                                                    <action selector="selectTransport:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x0L-9z-8Oa"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -268,8 +268,10 @@
                                 <constraints>
                                     <constraint firstItem="Gl5-G9-wb2" firstAttribute="leading" secondItem="m4N-wC-Fer" secondAttribute="leading" id="ChS-z9-rHY"/>
                                     <constraint firstAttribute="trailing" secondItem="m4N-wC-Fer" secondAttribute="trailing" id="LZf-8H-qLB"/>
+                                    <constraint firstItem="m4N-wC-Fer" firstAttribute="leading" secondItem="Lqd-pL-N4U" secondAttribute="leading" id="a2D-vW-EG3"/>
                                     <constraint firstItem="m4N-wC-Fer" firstAttribute="leading" secondItem="Lqd-pL-N4U" secondAttribute="leading" id="f12-mH-b66"/>
                                     <constraint firstItem="Gl5-G9-wb2" firstAttribute="trailing" secondItem="m4N-wC-Fer" secondAttribute="trailing" id="l4k-wS-XO7"/>
+                                    <constraint firstAttribute="trailing" secondItem="m4N-wC-Fer" secondAttribute="trailing" id="xhg-1G-Zer"/>
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="48s-rb-WKO">
@@ -304,13 +306,19 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="anyTransportBtn" destination="UaS-8F-553" id="mtF-ny-fuf"/>
+                        <outlet property="busBtn" destination="AJw-ru-jcM" id="q6x-0j-hrx"/>
                         <outlet property="dateBtn" destination="Z7i-aF-nt7" id="Bib-Zk-8p4"/>
                         <outlet property="dateStackView" destination="m4N-wC-Fer" id="XmM-Y8-CNT"/>
                         <outlet property="fromTextField" destination="eCk-Cz-TvB" id="YDa-sy-S3B"/>
+                        <outlet property="planeBtn" destination="Obg-e5-3es" id="aVU-Eo-lrm"/>
+                        <outlet property="suburbanBtn" destination="90X-3j-L0H" id="Gst-E8-6dW"/>
                         <outlet property="tableView" destination="48s-rb-WKO" id="vpT-2L-IhQ"/>
                         <outlet property="toTextField" destination="lta-55-JAY" id="hjB-IW-0uf"/>
                         <outlet property="todayBtn" destination="pvy-8l-0t0" id="Scd-hG-pmC"/>
                         <outlet property="tomorrowBtn" destination="iR4-II-SI1" id="qje-or-ov0"/>
+                        <outlet property="trainBtn" destination="ezz-S0-LUo" id="CUM-zL-bFf"/>
+                        <outlet property="transportsStackView" destination="Gl5-G9-wb2" id="liN-mw-9i2"/>
                         <outlet property="wayView" destination="yDA-xb-mFa" id="QIR-zY-4Wx"/>
                     </connections>
                 </viewController>
