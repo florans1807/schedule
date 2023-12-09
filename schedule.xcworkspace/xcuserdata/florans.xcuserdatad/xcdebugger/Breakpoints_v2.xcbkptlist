@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D47A6FAE-2125-4130-B1F5-FFE433328FA0"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52FCE394-4527-4BD7-B500-AE292B6BDBC0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "schedule/ApiClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getSchedule(date:transport:from:to:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "52FCE394-4527-4BD7-B500-AE292B6BDBC0 - c18f22da5fd1f66a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "4034">
+               </Location>
+               <Location
+                  uuid = "52FCE394-4527-4BD7-B500-AE292B6BDBC0 - c126749ea2571a67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "52FCE394-4527-4BD7-B500-AE292B6BDBC0 - c18f22da5fd1f66a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "4302">
+               </Location>
+               <Location
+                  uuid = "52FCE394-4527-4BD7-B500-AE292B6BDBC0 - c18f22da5fd1f66a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "4686">
+               </Location>
+               <Location
+                  uuid = "52FCE394-4527-4BD7-B500-AE292B6BDBC0 - c18f22da5fd1f66a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "4627">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9BCFF0DC-E485-4ABD-B2BC-C9D9F370C7C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "schedule/ScheduleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "tapToFindSchedule(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F015071-1D82-485F-9462-1FA429C1FD72"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "schedule/Controllers/ScheduleViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "277"
+            endingLineNumber = "277"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A0C834F-0D2E-422C-B191-5D7560281844"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "schedule/ApiClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "getSchedule(date:transport:from:to:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1A0C834F-0D2E-422C-B191-5D7560281844 - c126749ea2570588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "3797">
+               </Location>
+               <Location
+                  uuid = "1A0C834F-0D2E-422C-B191-5D7560281844 - c126749ea2570588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "3509">
+               </Location>
+               <Location
+                  uuid = "1A0C834F-0D2E-422C-B191-5D7560281844 - c126749ea2570588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1289">
+               </Location>
+               <Location
+                  uuid = "1A0C834F-0D2E-422C-B191-5D7560281844 - c126749ea2570588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "2046">
+               </Location>
+               <Location
+                  uuid = "1A0C834F-0D2E-422C-B191-5D7560281844 - c126749ea2570588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1521">
+               </Location>
+               <Location
+                  uuid = "1A0C834F-0D2E-422C-B191-5D7560281844 - c126749ea2570588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1759">
+               </Location>
+               <Location
+                  uuid = "1A0C834F-0D2E-422C-B191-5D7560281844 - c126749ea2570588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1641">
+               </Location>
+               <Location
+                  uuid = "1A0C834F-0D2E-422C-B191-5D7560281844 - c126749ea2570588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1885">
+               </Location>
+               <Location
+                  uuid = "1A0C834F-0D2E-422C-B191-5D7560281844 - c126749ea2570588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1974">
+               </Location>
+               <Location
+                  uuid = "1A0C834F-0D2E-422C-B191-5D7560281844 - c126749ea2570588"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "1966">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E819F6A2-C368-447E-A67D-94E9940E177C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "schedule/ApiClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "getSchedule(date:transport:from:to:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E819F6A2-C368-447E-A67D-94E9940E177C - c126749ea25705a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "3828">
+               </Location>
+               <Location
+                  uuid = "E819F6A2-C368-447E-A67D-94E9940E177C - c126749ea25705a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "3913">
+               </Location>
+               <Location
+                  uuid = "E819F6A2-C368-447E-A67D-94E9940E177C - c126749ea25705a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "1533">
+               </Location>
+               <Location
+                  uuid = "E819F6A2-C368-447E-A67D-94E9940E177C - c126749ea25705a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "2342">
+               </Location>
+               <Location
+                  uuid = "E819F6A2-C368-447E-A67D-94E9940E177C - c126749ea25705a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "1766">
+               </Location>
+               <Location
+                  uuid = "E819F6A2-C368-447E-A67D-94E9940E177C - c126749ea25705a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "2031">
+               </Location>
+               <Location
+                  uuid = "E819F6A2-C368-447E-A67D-94E9940E177C - c126749ea25705a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "1898">
+               </Location>
+               <Location
+                  uuid = "E819F6A2-C368-447E-A67D-94E9940E177C - c126749ea25705a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "2169">
+               </Location>
+               <Location
+                  uuid = "E819F6A2-C368-447E-A67D-94E9940E177C - c126749ea25705a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "2258">
+               </Location>
+               <Location
+                  uuid = "E819F6A2-C368-447E-A67D-94E9940E177C - c126749ea25705a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "2250">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "schedule/ApiClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "getSchedule(date:transport:from:to:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "3393">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "668">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "3449">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "646">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1229">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1986">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "663">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1461">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1699">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "666">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1581">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1825">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1914">
+               </Location>
+               <Location
+                  uuid = "7A4DF64B-F688-434E-BB1F-7D367C80407C - c126749ea25705eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "1906">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F0AB79AD-8415-42CA-B511-553A033BBD09"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "schedule/ApiClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "getSchedule(date:transport:from:to:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F0AB79AD-8415-42CA-B511-553A033BBD09 - c126749ea2570476"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "2416">
+               </Location>
+               <Location
+                  uuid = "F0AB79AD-8415-42CA-B511-553A033BBD09 - c126749ea2570476"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "3944">
+               </Location>
+               <Location
+                  uuid = "F0AB79AD-8415-42CA-B511-553A033BBD09 - c126749ea2570476"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1585">
+               </Location>
+               <Location
+                  uuid = "F0AB79AD-8415-42CA-B511-553A033BBD09 - c126749ea2570476"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "2373">
+               </Location>
+               <Location
+                  uuid = "F0AB79AD-8415-42CA-B511-553A033BBD09 - c126749ea2570476"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1794">
+               </Location>
+               <Location
+                  uuid = "F0AB79AD-8415-42CA-B511-553A033BBD09 - c126749ea2570476"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "2062">
+               </Location>
+               <Location
+                  uuid = "F0AB79AD-8415-42CA-B511-553A033BBD09 - c126749ea2570476"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1926">
+               </Location>
+               <Location
+                  uuid = "F0AB79AD-8415-42CA-B511-553A033BBD09 - c126749ea2570476"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "2200">
+               </Location>
+               <Location
+                  uuid = "F0AB79AD-8415-42CA-B511-553A033BBD09 - c126749ea2570476"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "2289">
+               </Location>
+               <Location
+                  uuid = "F0AB79AD-8415-42CA-B511-553A033BBD09 - c126749ea2570476"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "2281">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44BCE59D-0F00-4887-9B63-B9DFE99E8144"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "schedule/ApiClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "getSchedule(date:transport:from:to:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "44BCE59D-0F00-4887-9B63-B9DFE99E8144 - c126749ea2570417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "2569">
+               </Location>
+               <Location
+                  uuid = "44BCE59D-0F00-4887-9B63-B9DFE99E8144 - c126749ea2570417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "2532">
+               </Location>
+               <Location
+                  uuid = "44BCE59D-0F00-4887-9B63-B9DFE99E8144 - c126749ea2570417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "951">
+               </Location>
+               <Location
+                  uuid = "44BCE59D-0F00-4887-9B63-B9DFE99E8144 - c126749ea2570417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1524">
+               </Location>
+               <Location
+                  uuid = "44BCE59D-0F00-4887-9B63-B9DFE99E8144 - c126749ea2570417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1151">
+               </Location>
+               <Location
+                  uuid = "44BCE59D-0F00-4887-9B63-B9DFE99E8144 - c126749ea2570417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1328">
+               </Location>
+               <Location
+                  uuid = "44BCE59D-0F00-4887-9B63-B9DFE99E8144 - c126749ea2570417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1242">
+               </Location>
+               <Location
+                  uuid = "44BCE59D-0F00-4887-9B63-B9DFE99E8144 - c126749ea2570417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1412">
+               </Location>
+               <Location
+                  uuid = "44BCE59D-0F00-4887-9B63-B9DFE99E8144 - c126749ea2570417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1476">
+               </Location>
+               <Location
+                  uuid = "44BCE59D-0F00-4887-9B63-B9DFE99E8144 - c126749ea2570417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in schedule.ApiClient.getSchedule(date: Swift.String, transport: Swift.String, from: Swift.String, to: Swift.String, completion: (schedule.ScheduleData) -&gt; ()) -&gt; ()"
+                  moduleName = "schedule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florans/Desktop/schedule/schedule/ApiClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "1472">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

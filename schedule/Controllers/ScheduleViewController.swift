@@ -27,19 +27,19 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
     @IBOutlet weak var busBtn: UIButton!
     
     private var transportType: String?
-    private var selectedDirection: String?
     private var stationCodeFrom: String?
     private var stationCodeTo: String?
     private var selectedDate: String?
     private var chosenDate: Date?
     
     private var scheduleData: ScheduleData?
+    private var segments: [Segment] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        //tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         fromTextField.borderStyle = .none
         toTextField.borderStyle = .none
@@ -61,9 +61,6 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
         selectedDate = formatDate(date: Date.today)
         transportType = ""
         buttonSelectOrDeselect(buttons: [todayBtn, anyTransportBtn], isChosen: true)
-        //todayBtn.setTitleColor(.white, for: .normal)
-        //anyTransportBtn.backgroundColor = .darkGray
-        //anyTransportBtn.setTitleColor(.white, for: .normal)
         
         //let vc = CitiesViewController()
         //vc.getAllStations()
@@ -76,7 +73,6 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
     }
     
     func setDirection(direction: String, code: String?, isFrom: Bool) {
-        selectedDirection = direction
         if isFrom  {
             stationCodeFrom = code
         } else {
@@ -147,6 +143,10 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
         toTextField.resignFirstResponder()
     }
     
+    func getScheduleList() {
+        
+    }
+    
     @IBAction func selectDate(_ sender: UIButton) {
         switch sender.tag {
         case 1:
@@ -197,7 +197,6 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
         for btn in transportsStackView.arrangedSubviews {
             let button = btn as! UIButton
             if btn.tag == sender.tag {
-                //button.backgroundColor = .darkGray
                 button.setTitleColor(.white, for: .normal)
                 button.tintColor = .white
             } else {
@@ -240,6 +239,7 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
                         self.tableView.reloadData()
                     }
                 }
+                getScheduleList()
             }
         }
     }
@@ -264,15 +264,17 @@ extension ScheduleViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if scheduleData != nil {
-            return (scheduleData?.segments.count)!
+//            TODO: - uncomment
+//            return (scheduleData?.segments.count)!
+            return 0
         } else {
             return 0
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        cell.textLabel?.text = scheduleData?.segments[indexPath.row].arrivalPlatform
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ScheduleTableViewCell
+//        cell.directionLabel.text = scheduleData?.segments[indexPath.row].from.title
         return cell
     }
     
@@ -289,6 +291,7 @@ extension ScheduleViewController: UITextFieldDelegate {
         }
         cityVC.modalPresentationStyle = .popover
         cityVC.delegate = self
+        cityVC.stationInField = textField.text
 
         switch textField.tag {
         case 1:

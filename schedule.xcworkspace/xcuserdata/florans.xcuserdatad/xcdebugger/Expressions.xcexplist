@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CitiesViewController.tableView(_:cellForRowAt:):CitiesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "originalData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CitiesViewController.tableView(_:didSelectRowAt:):CitiesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "filteredData[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ScheduleViewController.tableView(_:cellForRowAt:):ScheduleViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "scheduleData?.segments[indexPath.row].arrivalPlatform">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ApiClient.getSchedule(date:transport:from:to:completion:):ApiClient.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

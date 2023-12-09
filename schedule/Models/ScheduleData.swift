@@ -8,161 +8,77 @@ import Foundation
 // MARK: - ScheduleData
 struct ScheduleData: Codable {
     let search: Search
-    let segments: [Segment]
-    let intervalSegments: [JSONAny]
-    let pagination: Pagination
+//    let segments: [Segment]
+//    let interval_segments: [JSONAny]
+//    let pagination: Pagination
 
-    enum CodingKeys: String, CodingKey {
-        case search, segments
-        case intervalSegments = "interval_segments"
-        case pagination
-    }
+//    enum CodingKeys: String, CodingKey {
+//        case search, segments
+//        case intervalSegments = "interval_segments"
+//        case pagination
+//    }
 }
 
 // MARK: - Pagination
-struct Pagination: Codable {
-    let total, limit, offset: Int
-}
+//struct Pagination: Codable {
+//    let total, limit, offset: Int
+//}
 
 // MARK: - Search
 struct Search: Codable {
-    let from, to: SearchFrom
-    let date: String
+    let from : From
+    let date: String?
 }
 
-// MARK: - SearchFrom
-struct SearchFrom: Codable {
-    let type, title, shortTitle, popularTitle: String
+
+struct test {
+    let title: Test1
+}
+
+struct Test1 {
+    
+}
+
+// MARK: - From
+struct From: Codable {
+    let type: String?
+//    let airport: String?
+    let title: String
+    let short_title: String?
+    let popular_title: String?
     let code: String
+    let station_type: StationType?
+    let station_type_name: String?
+    
+//    let transport_type: String
+    
 
-    enum CodingKeys: String, CodingKey {
-        case type, title
-        case shortTitle = "short_title"
-        case popularTitle = "popular_title"
-        case code
-    }
 }
+
+
 
 // MARK: - Segment
 struct Segment: Codable {
     let thread: Thread
-    let from, to: SegmentFrom
-    let departurePlatform, arrivalPlatform: String
-    let departureTerminal, arrivalTerminal: String?
+    let from, to: From
+    let departurePlatform, arrivalPlatform, departure_terminal, arrival_terminal: String
     let stops: String
     let duration: Int
-    let startDate: String
-    let departure, arrival: Date
-    let hasTransfers: Bool
-    let ticketsInfo: TicketsInfo
-
-    enum CodingKeys: String, CodingKey {
-        case thread, from, to
-        case departurePlatform = "departure_platform"
-        case arrivalPlatform = "arrival_platform"
-        case departureTerminal = "departure_terminal"
-        case arrivalTerminal = "arrival_terminal"
-        case stops, duration
-        case startDate = "start_date"
-        case departure, arrival
-        case hasTransfers = "has_transfers"
-        case ticketsInfo = "tickets_info"
-    }
+    let start_date: String
+    let departure_platform, arrival_platform: Date
+    let has_transfers: Bool
+    let tickets_info: TicketsInfo
 }
-
-// MARK: - SegmentFrom
-struct SegmentFrom: Codable {
-    let type: StationTypeEnum
-    let title: String
-    let shortTitle: ShortTitle?
-    let popularTitle: PopularTitle?
-    let code: String
-    let stationType: StationTypeEnum
-    let stationTypeName: StationTypeName
-    let transportType: TransportType
-
-    enum CodingKeys: String, CodingKey {
-        case type, title
-        case shortTitle = "short_title"
-        case popularTitle = "popular_title"
-        case code
-        case stationType = "station_type"
-        case stationTypeName = "station_type_name"
-        case transportType = "transport_type"
-    }
-}
-
-enum PopularTitle: String, Codable {
-    case empty = ""
-    case автовокзалЦентральный = "Автовокзал Центральный"
-    case казанскийВокзал = "Казанский вокзал"
-}
-
-enum ShortTitle: String, Codable {
-    case empty = ""
-    case мКазанская = "М-Казанская"
-}
-
-enum StationTypeEnum: String, Codable {
-    case airport = "airport"
-    case busStation = "bus_station"
-    case station = "station"
-    case trainStation = "train_station"
-    case platform = "platform"
-    case stop = "stop"
-    case checkpoint = "checkpoint"
-    case post = "post"
-    case crossing = "crossing"
-    case overtakingPoint = "overtaking_point"
-    case busStop = "bus_stop"
-    case unknown = "unknown"
-    case port = "port"
-    case portPoint = "port_point"
-    case wharf = "wharf"
-    case riverPort = "river_port"
-    case marineStation = "marine_station"
-}
-
-enum StationTypeName: String, Codable {
-    case автовокзал = "автовокзал"
-    case аэропорт = "аэропорт"
-    case вокзал = "вокзал"
-    case станция = "станция"
-    case автобуснаяОстановка = "автобусная остановка"
-    case автостанция = "автостанция"
-    case остановочныйПункт = "остановочный пункт"
-    case разъезд = "разъезд"
-}
-
-//enum TransportType: String, Codable {
-//    case bus = "bus"
-//    case plane = "plane"
-//    case train = "train"
-//    case suburban = "suburban"
-//    case water = "water"
-//    case helicopter = "helicopter"
-//}
 
 // MARK: - Thread
 struct Thread: Codable {
-    let number, title, shortTitle: String
+    let number, title, short_title: String
     let carrier: Carrier
-    let vehicle: String?
-    let expressType: JSONNull?
-    let transportType: TransportType
-    let transportSubtype: TransportSubtype
-    let uid, threadMethodLink: String
-
-    enum CodingKeys: String, CodingKey {
-        case number, title
-        case shortTitle = "short_title"
-        case carrier, vehicle
-        case expressType = "express_type"
-        case transportType = "transport_type"
-        case transportSubtype = "transport_subtype"
-        case uid
-        case threadMethodLink = "thread_method_link"
-    }
+    let vehicle: String
+    let express_type: JSONNull?
+    let transport_type: String
+    let transport_subtype: TransportSubtype
+    let uid, thread_method_link: String
 }
 
 // MARK: - Carrier
@@ -170,12 +86,12 @@ struct Carrier: Codable {
     let code: Int
     let title: String
     let codes: Codes
-    let address: String?
+    let address: JSONNull?
     let url: String
-    let email: String?
+    let email: JSONNull?
     let contacts, phone: String
-    let logo: String?
-    let logoSVG: String?
+    let logo: String
+    let logoSVG: String
 
     enum CodingKeys: String, CodingKey {
         case code, title, codes, address, url, email, contacts, phone, logo
@@ -185,7 +101,7 @@ struct Carrier: Codable {
 
 // MARK: - Codes
 struct Codes: Codable {
-    let sirena, iata: String?
+    let sirena, iata: String
     let icao: JSONNull?
 }
 
@@ -196,25 +112,8 @@ struct TransportSubtype: Codable {
 
 // MARK: - TicketsInfo
 struct TicketsInfo: Codable {
-    let etMarker: Bool
-    let places: [Place]
-
-    enum CodingKeys: String, CodingKey {
-        case etMarker = "et_marker"
-        case places
-    }
-}
-
-// MARK: - Place
-struct Place: Codable {
-    let name: JSONNull?
-    let price: Price
-    let currency: String
-}
-
-// MARK: - Price
-struct Price: Codable {
-    let whole, cents: Int
+    let et_marker: Bool
+    let places: [JSONAny]
 }
 
 // MARK: - Encode/decode helpers

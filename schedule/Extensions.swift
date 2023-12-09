@@ -8,6 +8,15 @@
 import Foundation
 import UIKit
 
+extension UIButton {
+    override open var isSelected: Bool {
+        didSet {
+            super.isSelected = isSelected
+            backgroundColor = isSelected ? UIColor.darkGray : UIColor.systemGray4
+        }
+    }
+}
+
 extension UIStackView {
     func addHorizontalSeparators(color : UIColor) {
         let separatorsToAdd = self.arrangedSubviews.count - 1
@@ -29,37 +38,15 @@ extension UIStackView {
 }
 
 extension UIView {
-    
-    /**
-     Rounds the given set of corners to the specified radius
-     
-     - parameter corners: Corners to round
-     - parameter radius:  Radius to round to
-     */
     func round(corners: UIRectCorner, radius: CGFloat) {
         _ = _round(corners: corners, radius: radius)
     }
     
-    /**
-     Rounds the given set of corners to the specified radius with a border
-     
-     - parameter corners:     Corners to round
-     - parameter radius:      Radius to round to
-     - parameter borderColor: The border color
-     - parameter borderWidth: The border width
-     */
     func round(corners: UIRectCorner, radius: CGFloat, borderColor: UIColor, borderWidth: CGFloat) {
         let mask = _round(corners: corners, radius: radius)
         addBorder(mask: mask, borderColor: borderColor, borderWidth: borderWidth)
     }
     
-    /**
-     Fully rounds an autolayout view (e.g. one with no known frame) with the given diameter and border
-     
-     - parameter diameter:    The view's diameter
-     - parameter borderColor: The border color
-     - parameter borderWidth: The border width
-     */
     func fullyRound(diameter: CGFloat, borderColor: UIColor, borderWidth: CGFloat) {
         layer.masksToBounds = true
         layer.cornerRadius = diameter / 2
@@ -89,4 +76,20 @@ private extension UIView {
         layer.addSublayer(borderLayer)
     }
     
+}
+
+extension Date {
+   static var tomorrow:  Date { return Date().dayAfter }
+   static var today: Date {return Date()}
+   var dayAfter: Date {
+      return Calendar.current.date(byAdding: .day, value: 1, to: Date())!
+   }
+    
+    func get(_ components: Calendar.Component..., calendar: Calendar = Calendar.current) -> DateComponents {
+        return calendar.dateComponents(Set(components), from: self)
+    }
+    
+    func get(_ component: Calendar.Component, calendar: Calendar = Calendar.current) -> Int {
+        return calendar.component(component, from: self)
+    }
 }

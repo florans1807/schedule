@@ -12,6 +12,7 @@
 		4AA54B0A2B20A08900841FC9 /* StationsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA54B092B20A08900841FC9 /* StationsList.storyboard */; };
 		4AA54B0C2B21C7CB00841FC9 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA54B0B2B21C7CB00841FC9 /* Calendar.storyboard */; };
 		4AA54B0E2B21D20D00841FC9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA54B0D2B21D20C00841FC9 /* CalendarViewController.swift */; };
+		4AA7531D2B24B99A005F3836 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7531C2B24B99A005F3836 /* TestModel.swift */; };
 		4AC3068A2B1E233A00B76C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC306892B1E233A00B76C3D /* AppDelegate.swift */; };
 		4AC3068C2B1E233A00B76C3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3068B2B1E233A00B76C3D /* SceneDelegate.swift */; };
 		4AC3068E2B1E233A00B76C3D /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3068D2B1E233A00B76C3D /* ScheduleViewController.swift */; };
@@ -21,11 +22,13 @@
 		4AC306A12B1E233E00B76C3D /* scheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC306A02B1E233E00B76C3D /* scheduleTests.swift */; };
 		4AC306AB2B1E233E00B76C3D /* scheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC306AA2B1E233E00B76C3D /* scheduleUITests.swift */; };
 		4AC306AD2B1E233E00B76C3D /* scheduleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC306AC2B1E233E00B76C3D /* scheduleUITestsLaunchTests.swift */; };
-		4AC306BA2B1E29A500B76C3D /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC306B92B1E29A500B76C3D /* extensions.swift */; };
+		4AC306BA2B1E29A500B76C3D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC306B92B1E29A500B76C3D /* Extensions.swift */; };
 		4AC306BC2B1F25E100B76C3D /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC306BB2B1F25E100B76C3D /* ApiClient.swift */; };
 		4AC306BE2B1F375900B76C3D /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC306BD2B1F375900B76C3D /* ScheduleTableViewCell.swift */; };
 		4AC306C02B1F425B00B76C3D /* ScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC306BF2B1F425B00B76C3D /* ScheduleData.swift */; };
 		4AC306C42B1F7F6300B76C3D /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC306C32B1F7F6300B76C3D /* CitiesViewController.swift */; };
+		4AC70C0D2B23288B009E3541 /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC70C0C2B23288B009E3541 /* StationTableViewCell.swift */; };
+		4AC70C0F2B23388F009E3541 /* NearestStationsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC70C0E2B23388F009E3541 /* NearestStationsData.swift */; };
 		83BCFB9FE401227B24B5667B /* Pods_schedule_scheduleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5674E5315273E75CCD55C8BE /* Pods_schedule_scheduleUITests.framework */; };
 		A7F11F414CB26E0188085787 /* Pods_scheduleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36732B36ADC5EC77D3FFFAD /* Pods_scheduleTests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +55,7 @@
 		4AA54B092B20A08900841FC9 /* StationsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StationsList.storyboard; sourceTree = "<group>"; };
 		4AA54B0B2B21C7CB00841FC9 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		4AA54B0D2B21D20C00841FC9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		4AA7531C2B24B99A005F3836 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		4AC306862B1E233A00B76C3D /* schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = schedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC306892B1E233A00B76C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC3068B2B1E233A00B76C3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,11 +69,13 @@
 		4AC306A62B1E233E00B76C3D /* scheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC306AA2B1E233E00B76C3D /* scheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleUITests.swift; sourceTree = "<group>"; };
 		4AC306AC2B1E233E00B76C3D /* scheduleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4AC306B92B1E29A500B76C3D /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		4AC306B92B1E29A500B76C3D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4AC306BB2B1F25E100B76C3D /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		4AC306BD2B1F375900B76C3D /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		4AC306BF2B1F425B00B76C3D /* ScheduleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleData.swift; sourceTree = "<group>"; };
 		4AC306C32B1F7F6300B76C3D /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		4AC70C0C2B23288B009E3541 /* StationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
+		4AC70C0E2B23388F009E3541 /* NearestStationsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestStationsData.swift; sourceTree = "<group>"; };
 		4DA97D1C00900C43F0DE6DCD /* Pods-schedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schedule.debug.xcconfig"; path = "Target Support Files/Pods-schedule/Pods-schedule.debug.xcconfig"; sourceTree = "<group>"; };
 		5674E5315273E75CCD55C8BE /* Pods_schedule_scheduleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_schedule_scheduleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD73330D5C2F2B8D9F790D1 /* Pods-schedule-scheduleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-schedule-scheduleUITests.release.xcconfig"; path = "Target Support Files/Pods-schedule-scheduleUITests/Pods-schedule-scheduleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,7 +125,6 @@
 				970B2990398CF3738ACFEE3B /* Pods-scheduleTests.debug.xcconfig */,
 				F3C0FA26A0846789A2B24CDB /* Pods-scheduleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,20 +155,14 @@
 			children = (
 				4AC306892B1E233A00B76C3D /* AppDelegate.swift */,
 				4AC3068B2B1E233A00B76C3D /* SceneDelegate.swift */,
-				4AC3068D2B1E233A00B76C3D /* ScheduleViewController.swift */,
-				4AC3068F2B1E233A00B76C3D /* Main.storyboard */,
-				4AC306922B1E233E00B76C3D /* Assets.xcassets */,
-				4AC306942B1E233E00B76C3D /* LaunchScreen.storyboard */,
-				4AC306972B1E233E00B76C3D /* Info.plist */,
-				4AC306B92B1E29A500B76C3D /* extensions.swift */,
 				4AC306BB2B1F25E100B76C3D /* ApiClient.swift */,
-				4AC306BD2B1F375900B76C3D /* ScheduleTableViewCell.swift */,
-				4AC306BF2B1F425B00B76C3D /* ScheduleData.swift */,
-				4AC306C32B1F7F6300B76C3D /* CitiesViewController.swift */,
-				4AA54B072B20876700841FC9 /* StationsData.swift */,
-				4AA54B092B20A08900841FC9 /* StationsList.storyboard */,
-				4AA54B0B2B21C7CB00841FC9 /* Calendar.storyboard */,
-				4AA54B0D2B21D20C00841FC9 /* CalendarViewController.swift */,
+				4AC306B92B1E29A500B76C3D /* Extensions.swift */,
+				4AC70C112B248E17009E3541 /* Storyboards */,
+				4AC70C132B248E59009E3541 /* Cells */,
+				4AC70C102B248DF7009E3541 /* Controllers */,
+				4AC70C122B248E42009E3541 /* Models */,
+				4AC306922B1E233E00B76C3D /* Assets.xcassets */,
+				4AC306972B1E233E00B76C3D /* Info.plist */,
 			);
 			path = schedule;
 			sourceTree = "<group>";
@@ -183,6 +182,47 @@
 				4AC306AC2B1E233E00B76C3D /* scheduleUITestsLaunchTests.swift */,
 			);
 			path = scheduleUITests;
+			sourceTree = "<group>";
+		};
+		4AC70C102B248DF7009E3541 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4AC3068D2B1E233A00B76C3D /* ScheduleViewController.swift */,
+				4AC306C32B1F7F6300B76C3D /* CitiesViewController.swift */,
+				4AA54B0D2B21D20C00841FC9 /* CalendarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4AC70C112B248E17009E3541 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4AC306942B1E233E00B76C3D /* LaunchScreen.storyboard */,
+				4AC3068F2B1E233A00B76C3D /* Main.storyboard */,
+				4AA54B092B20A08900841FC9 /* StationsList.storyboard */,
+				4AA54B0B2B21C7CB00841FC9 /* Calendar.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4AC70C122B248E42009E3541 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4AA54B072B20876700841FC9 /* StationsData.swift */,
+				4AC306BF2B1F425B00B76C3D /* ScheduleData.swift */,
+				4AA7531C2B24B99A005F3836 /* TestModel.swift */,
+				4AC70C0E2B23388F009E3541 /* NearestStationsData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4AC70C132B248E59009E3541 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4AC70C0C2B23288B009E3541 /* StationTableViewCell.swift */,
+				4AC306BD2B1F375900B76C3D /* ScheduleTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		751C8FE1F64E8B8D44595D26 /* Frameworks */ = {
@@ -437,14 +477,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AA54B0E2B21D20D00841FC9 /* CalendarViewController.swift in Sources */,
+				4AC70C0F2B23388F009E3541 /* NearestStationsData.swift in Sources */,
 				4AC3068E2B1E233A00B76C3D /* ScheduleViewController.swift in Sources */,
 				4AA54B082B20876700841FC9 /* StationsData.swift in Sources */,
+				4AC70C0D2B23288B009E3541 /* StationTableViewCell.swift in Sources */,
+				4AA7531D2B24B99A005F3836 /* TestModel.swift in Sources */,
 				4AC3068A2B1E233A00B76C3D /* AppDelegate.swift in Sources */,
 				4AC306BE2B1F375900B76C3D /* ScheduleTableViewCell.swift in Sources */,
 				4AC306C02B1F425B00B76C3D /* ScheduleData.swift in Sources */,
 				4AC3068C2B1E233A00B76C3D /* SceneDelegate.swift in Sources */,
 				4AC306C42B1F7F6300B76C3D /* CitiesViewController.swift in Sources */,
-				4AC306BA2B1E29A500B76C3D /* extensions.swift in Sources */,
+				4AC306BA2B1E29A500B76C3D /* Extensions.swift in Sources */,
 				4AC306BC2B1F25E100B76C3D /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,7 +581,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -601,7 +644,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

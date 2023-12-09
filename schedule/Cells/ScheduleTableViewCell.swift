@@ -8,10 +8,12 @@
 import UIKit
 
 class ScheduleTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var directionLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        directionLabel.sizeToFit()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

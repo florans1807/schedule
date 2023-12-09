@@ -14,8 +14,10 @@ class CitiesViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var directionLabel: UILabel!
     
+    var stationInField: String?
+    
     var countries: [Country] = []
-    var nearestStations: [Station2] = []
+    //var nearestStations: [Station2] = []
     //var dictOfStations: [String:[String]] = [:]
         
     var originalData: [SearchedStation] = []
@@ -59,6 +61,11 @@ class CitiesViewController: UIViewController {
             directionLabel.text = "Куда"
             searchBar.placeholder = "Куда"
         }
+        
+        searchBar.becomeFirstResponder()
+        if let field = stationInField {
+            searchBar.text = stationInField
+        }
     }
     
     func getListOfStations() {
@@ -74,12 +81,12 @@ class CitiesViewController: UIViewController {
         }
     }
     
-    func getListOfNearestStations() {
-        for station in nearestStations {
-            let stationId = UUID().uuidString
-            originalDataNearest.append(SearchedStation(id: stationId, name: station.title, code: station.code, regionTitle: station.shortTitle ?? "", stationType: station.stationType))
-        }
-    }
+//    func getListOfNearestStations() {
+//        for station in nearestStations {
+//            let stationId = UUID().uuidString
+//            originalDataNearest.append(SearchedStation(id: stationId, name: station.title, code: station.code, regionTitle: station.shortTitle ?? "", stationType: station.stationType))
+//        }
+//    }
     
     func getAllStations() {
         ApiClient.shared.getAllStations { [weak self] values in
@@ -92,16 +99,16 @@ class CitiesViewController: UIViewController {
         }
     }
     
-    func getNearestStations() {
-        ApiClient.shared.getNearestStations { [weak self] values in
-            DispatchQueue.main.async {
-                guard let self else { return }
-                self.nearestStations = values
-                self.getListOfNearestStations()
-                self.tableView.reloadData()
-            }
-        }
-    }
+//    func getNearestStations() {
+//        ApiClient.shared.getNearestStations { [weak self] values in
+//            DispatchQueue.main.async {
+//                guard let self else { return }
+//                self.nearestStations = values
+//                self.getListOfNearestStations()
+//                self.tableView.reloadData()
+//            }
+//        }
+//    }
     
     @IBAction func closeStationsSearch(_ sender: Any) {
         dismissStationsSearchList()
@@ -123,8 +130,6 @@ extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //tableView.
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "stationCell") as! StationTableViewCell
         let cell = tableView.dequeueReusableCell(withIdentifier: "stationCell", for: indexPath) as! StationTableViewCell
         if searchBar.text != "" {
             //RETURN CELLS CREATED FROM FILTERED DATA
