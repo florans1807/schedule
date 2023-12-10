@@ -16,5 +16,7 @@ target 'schedule' do
     # Pods for testing
   end
   pod 'FSCalendar'
+  pod 'JGProgressHUD'
+
 
 end

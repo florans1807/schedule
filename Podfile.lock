@@ -1,16 +1,20 @@
 PODS:
   - FSCalendar (2.8.4)
+  - JGProgressHUD (2.2)
 
 DEPENDENCIES:
   - FSCalendar
+  - JGProgressHUD
 
 SPEC REPOS:
   trunk:
     - FSCalendar
+    - JGProgressHUD
 
 SPEC CHECKSUMS:
   FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
 
-PODFILE CHECKSUM: ee7a60b6c48175c5e2122916733d4c6acc5dbeef
+PODFILE CHECKSUM: 7cd33b0c4f0975a00141cc6f3dc7f5a9dab76239
 
 COCOAPODS: 1.14.2
