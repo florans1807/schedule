@@ -298,6 +298,7 @@ extension ScheduleViewController: UITableViewDelegate, UITableViewDataSource {
             switch transportType {
             case "bus":
                 cell.transportTypeImageView.image = UIImage(systemName: "bus")
+                cell.transportTypeImageView.tintColor = .orange
                 break
             case "helicopter":
                 break
