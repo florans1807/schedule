@@ -34,5 +34,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "ScheduleViewController.tableView(_:numberOfRowsInSection:):ScheduleViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "scheduleData?.segments.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

@@ -12,7 +12,6 @@
 		4AA54B0A2B20A08900841FC9 /* StationsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA54B092B20A08900841FC9 /* StationsList.storyboard */; };
 		4AA54B0C2B21C7CB00841FC9 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA54B0B2B21C7CB00841FC9 /* Calendar.storyboard */; };
 		4AA54B0E2B21D20D00841FC9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA54B0D2B21D20C00841FC9 /* CalendarViewController.swift */; };
-		4AA7531D2B24B99A005F3836 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7531C2B24B99A005F3836 /* TestModel.swift */; };
 		4AC3068A2B1E233A00B76C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC306892B1E233A00B76C3D /* AppDelegate.swift */; };
 		4AC3068C2B1E233A00B76C3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3068B2B1E233A00B76C3D /* SceneDelegate.swift */; };
 		4AC3068E2B1E233A00B76C3D /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3068D2B1E233A00B76C3D /* ScheduleViewController.swift */; };
@@ -55,7 +54,6 @@
 		4AA54B092B20A08900841FC9 /* StationsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StationsList.storyboard; sourceTree = "<group>"; };
 		4AA54B0B2B21C7CB00841FC9 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		4AA54B0D2B21D20C00841FC9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		4AA7531C2B24B99A005F3836 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		4AC306862B1E233A00B76C3D /* schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = schedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC306892B1E233A00B76C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC3068B2B1E233A00B76C3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,7 +208,6 @@
 			children = (
 				4AA54B072B20876700841FC9 /* StationsData.swift */,
 				4AC306BF2B1F425B00B76C3D /* ScheduleData.swift */,
-				4AA7531C2B24B99A005F3836 /* TestModel.swift */,
 				4AC70C0E2B23388F009E3541 /* NearestStationsData.swift */,
 			);
 			path = Models;
@@ -481,7 +478,6 @@
 				4AC3068E2B1E233A00B76C3D /* ScheduleViewController.swift in Sources */,
 				4AA54B082B20876700841FC9 /* StationsData.swift in Sources */,
 				4AC70C0D2B23288B009E3541 /* StationTableViewCell.swift in Sources */,
-				4AA7531D2B24B99A005F3836 /* TestModel.swift in Sources */,
 				4AC3068A2B1E233A00B76C3D /* AppDelegate.swift in Sources */,
 				4AC306BE2B1F375900B76C3D /* ScheduleTableViewCell.swift in Sources */,
 				4AC306C02B1F425B00B76C3D /* ScheduleData.swift in Sources */,
@@ -679,6 +675,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -708,6 +705,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

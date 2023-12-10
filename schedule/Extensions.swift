@@ -93,3 +93,14 @@ extension Date {
         return calendar.component(component, from: self)
     }
 }
+
+extension Int {
+     func hours() -> String {
+         var hourString: String!
+         if "1".contains("\(self % 10)")      {hourString = "час"}
+         if "234".contains("\(self % 10)")    {hourString = "часа" }
+         if "567890".contains("\(self % 10)") {hourString = "часов"}
+         if 11...14 ~= self % 100                   {hourString = "часов"}
+         return "\(self) " + hourString
+    }
+}

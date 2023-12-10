@@ -7,8 +7,11 @@
 
 import UIKit
 import CoreLocation
+import JGProgressHUD
 
 class CitiesViewController: UIViewController {
+    
+    private var spinner = JGProgressHUD(style: .dark)
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -123,6 +126,11 @@ class CitiesViewController: UIViewController {
 extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if originalData.isEmpty {
+            spinner.show(in: tableView)
+        } else {
+            spinner.dismiss()
+        }
         if searchBar.text != "" {
             return filteredData.count
         }

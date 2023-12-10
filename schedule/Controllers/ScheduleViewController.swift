@@ -15,7 +15,7 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
     @IBOutlet weak var dateStackView: UIStackView!
     @IBOutlet weak var wayView: UIView!
     @IBOutlet weak var transportsStackView: UIStackView!
-    
+        
     @IBOutlet weak var todayBtn: UIButton!
     @IBOutlet weak var tomorrowBtn: UIButton!
     @IBOutlet weak var dateBtn: UIButton!
@@ -25,7 +25,7 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
     @IBOutlet weak var trainBtn: UIButton!
     @IBOutlet weak var suburbanBtn: UIButton!
     @IBOutlet weak var busBtn: UIButton!
-    
+        
     private var transportType: String?
     private var stationCodeFrom: String?
     private var stationCodeTo: String?
@@ -33,13 +33,14 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
     private var chosenDate: Date?
     
     private var scheduleData: ScheduleData?
-    private var segments: [Segment] = []
     
+    private let dateFormatter = DateFormatter()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
+//        tableView.dataSource = self
+//        tableView.delegate = self
         
         fromTextField.borderStyle = .none
         toTextField.borderStyle = .none
@@ -54,8 +55,9 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
         
         todayBtn.layer.masksToBounds = true
         dateBtn.layer.masksToBounds = true
-        todayBtn.round(corners: [.bottomLeft, .topLeft], radius: 4)
-        dateBtn.round(corners: [.bottomRight, .topRight], radius: 4)
+        
+        dateStackView.layer.masksToBounds = true
+        dateStackView.layer.cornerRadius = 4.0
         
         //setting conditions by default
         selectedDate = formatDate(date: Date.today)
@@ -64,12 +66,6 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
         
         //let vc = CitiesViewController()
         //vc.getAllStations()
-    }
-    
-    func formatDate(date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "YYYY-MM-dd"
-        return formatter.string(from: date)
     }
     
     func setDirection(direction: String, code: String?, isFrom: Bool) {
@@ -109,19 +105,35 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
             buttonSelectOrDeselect(buttons: [dateBtn], isChosen: true)
             buttonSelectOrDeselect(buttons: [todayBtn, tomorrowBtn], isChosen: false)
         default:
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd"
-            let date = dateFormatter.date(from: strDate)
-            
-            dateFormatter.locale = Locale(identifier: "ru_RU")
-            dateFormatter.dateFormat = "d MMMM"
-            let dateString = dateFormatter.string(from: date!)
-            
-            dateBtn.setTitle(dateString, for: .normal)
+            //let dateFormatter = DateFormatter()
+//            dateFormatter.dateFormat = "yyyy-MM-dd"
+//            let date = dateFormatter.date(from: strDate)
+            let date = formatFromStringToDate(string: strDate)
+            dateBtn.setTitle(formatDateToRus(date: date, isFull: true), for: .normal)
             buttonSelectOrDeselect(buttons: [dateBtn], isChosen: true)
             buttonSelectOrDeselect(buttons: [todayBtn, tomorrowBtn], isChosen: false)
             chosenDate = date
         }
+    }
+    
+    func formatDate(date: Date) -> String {
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        return dateFormatter.string(from: date)
+    }
+    
+    func formatDateToRus(date: Date, isFull: Bool) -> String {
+        dateFormatter.locale = Locale(identifier: "ru_RU")
+        if isFull {
+            dateFormatter.dateFormat = "d MMMM"
+        } else {
+            dateFormatter.dateFormat = "d MMM"
+        }
+        return dateFormatter.string(from: date)
+    }
+    
+    func formatFromStringToDate(string: String) -> Date {
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter.date(from: string)!
     }
     
     func buttonSelectOrDeselect(buttons: [UIButton], isChosen: Bool) {
@@ -141,10 +153,6 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
     func resignTextFields() {
         fromTextField.resignFirstResponder()
         toTextField.resignFirstResponder()
-    }
-    
-    func getScheduleList() {
-        
     }
     
     @IBAction func selectDate(_ sender: UIButton) {
@@ -229,8 +237,8 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
     
     @IBAction func tapToFindSchedule(_ sender: Any) {
         if let from = fromTextField.text, let to = toTextField.text {
-            if false {//from.isEmpty || to.isEmpty {
-                showAlertMessage()
+            if from.isEmpty || to.isEmpty {
+                noDirectionAlert()
             } else {
                 ApiClient.shared.getSchedule(date: selectedDate ?? "", transport: transportType ?? "", from: stationCodeFrom ?? "", to: stationCodeTo ?? "") { [weak self] values in
                     DispatchQueue.main.async {
@@ -239,7 +247,8 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
                         self.tableView.reloadData()
                     }
                 }
-                getScheduleList()
+                tableView.dataSource = self
+                tableView.delegate = self
             }
         }
     }
@@ -251,8 +260,16 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
         toTextField.text = from
     }
     
-    func showAlertMessage() {
+    func noDirectionAlert() {
         let alert = UIAlertController(title: "Выберите направление", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            print("ok")
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func noScheduleLAlert() {
+        let alert = UIAlertController(title: "По данному направлению ничего не найдено", message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
             print("ok")
         }))
@@ -264,17 +281,104 @@ extension ScheduleViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if scheduleData != nil {
-//            TODO: - uncomment
-//            return (scheduleData?.segments.count)!
-            return 0
+            if scheduleData?.segments.count == 0 {
+                noScheduleLAlert()
+            }
+            return (scheduleData?.segments.count)!
         } else {
+            noScheduleLAlert()
             return 0
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ScheduleTableViewCell
-//        cell.directionLabel.text = scheduleData?.segments[indexPath.row].from.title
+        
+        if let transportType = scheduleData?.segments[indexPath.row].thread.transportType {
+            switch transportType {
+            case "bus":
+                cell.transportTypeImageView.image = UIImage(systemName: "bus")
+                break
+            case "helicopter":
+                break
+            case "plane":
+                cell.transportTypeImageView.image = UIImage(systemName: "airplane")
+                break
+            case "sea":
+                break
+            case "train":
+                cell.transportTypeImageView.image = UIImage(systemName: "train.side.front.car")
+                break
+            case "water":
+                break
+            default:
+                break
+            }
+        }
+        
+        cell.carrierLabel.text = scheduleData?.segments[indexPath.row].thread.carrier.title
+        if let vehicle = scheduleData?.segments[indexPath.row].thread.vehicle {
+            cell.vehicleLabel.text = vehicle
+        } else {
+            cell.vehicleLabel.text = ""
+        }
+        cell.directionLabel.text = scheduleData?.segments[indexPath.row].thread.title
+        
+        if let fromDate = scheduleData?.segments[indexPath.row].departure_platform, let toDate = scheduleData?.segments[indexPath.row].arrival_platform {
+            cell.dateFromLabel.text = formatDateToRus(date: fromDate, isFull: false)
+            cell.dateToLabel.text = formatDateToRus(date: toDate, isFull: false)
+            dateFormatter.dateFormat = "HH:mm"
+            cell.timeFromLabel.text = dateFormatter.string(from: fromDate)
+            cell.timeToLabel.text = dateFormatter.string(from: toDate)
+        } else if scheduleData?.segments[indexPath.row].thread.interval != nil && scheduleData?.segments[indexPath.row].startDate != nil {
+            let interval = scheduleData?.segments[indexPath.row].thread.interval
+            let startDate = scheduleData?.segments[indexPath.row].startDate
+            let fullDate = formatFromStringToDate(string: startDate!)
+            let shortDate = formatDateToRus(date: fullDate, isFull: false)
+            cell.timeFromLabel.text = interval?.beginTime
+            cell.timeToLabel.text = interval?.endTime
+            cell.dateFromLabel.text = shortDate
+            cell.dateToLabel.text = "-"
+        } else if let startDate = scheduleData?.segments[indexPath.row].startDate {
+            let fullDate = formatFromStringToDate(string: startDate)
+            let shortDate = formatDateToRus(date: fullDate, isFull: false)
+            cell.dateFromLabel.text = shortDate
+            cell.dateToLabel.text = "-"//shortDate
+            dateFormatter.dateFormat = "HH:mm"
+            cell.timeFromLabel.text = dateFormatter.string(from: fullDate)
+            cell.timeToLabel.text = "-"//dateFormatter.string(from: fullDate)
+        } else {
+            cell.dateFromLabel.text = "-"
+            cell.dateToLabel.text = "-"
+            cell.timeFromLabel.text = "-"
+            cell.timeToLabel.text = "-"
+        }
+        
+        if let fromLocation = scheduleData?.search.from.title {
+            if let departureTerminal = scheduleData?.segments[indexPath.row].departure_terminal {
+                cell.stationFrom.text = "\(fromLocation), \(departureTerminal)"
+            } else {
+                cell.stationFrom.text = fromLocation
+            }
+        } else {
+            cell.stationFrom.text = "-"
+        }
+        
+        if let toLocation = scheduleData?.search.to.title {
+            if let arrivalTerminal = scheduleData?.segments[indexPath.row].departure_terminal {
+                cell.stationTo.text = "\(toLocation), \(arrivalTerminal)"
+            } else {
+                cell.stationTo.text = toLocation
+            }
+        } else {
+            cell.stationTo.text = "-"
+        }
+        
+        if let duration = scheduleData?.segments[indexPath.row].duration {
+            let hours = duration/3600
+            cell.durationLabel.text = hours.hours()
+        }
+        
         return cell
     }
     
@@ -301,15 +405,6 @@ extension ScheduleViewController: UITextFieldDelegate {
         default:
             break
         }
-        
-//        ApiClient.shared.getAllStations { values in
-//            DispatchQueue.main.async {
-//                //guard let self else { return }
-//                cityVC.countries = values
-//                cityVC.getListOfStations()
-//                cityVC.tableView.reloadData()
-//            }
-//        }
         
         present(cityVC, animated: true, completion: nil)
     }
