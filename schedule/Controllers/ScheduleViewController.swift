@@ -304,11 +304,13 @@ extension ScheduleViewController: UITableViewDelegate, UITableViewDataSource {
                 break
             case "plane":
                 cell.transportTypeImageView.image = UIImage(systemName: "airplane")
+                cell.transportTypeImageView.tintColor = .link
                 break
             case "sea":
                 break
             case "train":
                 cell.transportTypeImageView.image = UIImage(systemName: "train.side.front.car")
+                cell.transportTypeImageView.tintColor = .red
                 break
             case "water":
                 break
