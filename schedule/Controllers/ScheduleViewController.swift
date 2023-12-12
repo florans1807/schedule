@@ -240,6 +240,7 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
             if from.isEmpty || to.isEmpty {
                 noDirectionAlert()
             } else {
+                scheduleData = nil
                 ApiClient.shared.getSchedule(date: selectedDate ?? "", transport: transportType ?? "", from: stationCodeFrom ?? "", to: stationCodeTo ?? "") { [weak self] values in
                     DispatchQueue.main.async {
                         guard let self else { return }
@@ -249,6 +250,7 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
                 }
                 tableView.dataSource = self
                 tableView.delegate = self
+                //tableView.reloadData()
             }
         }
     }
@@ -327,6 +329,18 @@ extension ScheduleViewController: UITableViewDelegate, UITableViewDataSource {
         }
         cell.directionLabel.text = scheduleData?.segments[indexPath.row].thread.title
         
+//        if let fromDate = scheduleData?.segments[indexPath.row].departure_platform {
+//            cell.dateFromLabel.text = formatDateToRus(date: fromDate, isFull: false)
+//            dateFormatter.dateFormat = "HH:mm"
+//            cell.timeFromLabel.text = dateFormatter.string(from: fromDate)
+//        }
+//        
+//        if let toDate = scheduleData?.segments[indexPath.row].arrival_platform {
+//            cell.dateToLabel.text = formatDateToRus(date: toDate, isFull: false)
+//            dateFormatter.dateFormat = "HH:mm"
+//            cell.timeToLabel.text = dateFormatter.string(from: toDate)
+//        }
+        
         if let fromDate = scheduleData?.segments[indexPath.row].departure_platform, let toDate = scheduleData?.segments[indexPath.row].arrival_platform {
             cell.dateFromLabel.text = formatDateToRus(date: fromDate, isFull: false)
             cell.dateToLabel.text = formatDateToRus(date: toDate, isFull: false)
@@ -346,9 +360,9 @@ extension ScheduleViewController: UITableViewDelegate, UITableViewDataSource {
             let fullDate = formatFromStringToDate(string: startDate)
             let shortDate = formatDateToRus(date: fullDate, isFull: false)
             cell.dateFromLabel.text = shortDate
-            cell.dateToLabel.text = "-"//shortDate
-            dateFormatter.dateFormat = "HH:mm"
-            cell.timeFromLabel.text = dateFormatter.string(from: fullDate)
+            cell.dateToLabel.text = "-"
+            //dateFormatter.dateFormat = "HH:mm"
+            cell.timeFromLabel.text = "-"//dateFormatter.string(from: fullDate)
             cell.timeToLabel.text = "-"//dateFormatter.string(from: fullDate)
         } else {
             cell.dateFromLabel.text = "-"

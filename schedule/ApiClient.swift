@@ -31,10 +31,12 @@ class ApiClient {
         let when = (date == "На все дни") ? "" : "&date=\(date)"
         let transfer = transport.isEmpty ? "" : "&transport_types=\(transport)"
        
+        let url = URL(string:"https://api.rasp.yandex.net/v3.0/search/?apikey=c1c3c337-25ac-43e7-96d8-b4b906744736&format=json&from=c45&to=c20074&lang=ru_RU&page=1" + when + transfer)!
+        
         let url5 = URL(string:"https://api.rasp.yandex.net/v3.0/search/?apikey=c1c3c337-25ac-43e7-96d8-b4b906744736&format=json&from=\(from)&to=\(to)&lang=ru_RU&page=1" + when + transfer)!
         
         var request = URLRequest(url: url5)
-        print(url5)
+        print(url)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data else {
                 return

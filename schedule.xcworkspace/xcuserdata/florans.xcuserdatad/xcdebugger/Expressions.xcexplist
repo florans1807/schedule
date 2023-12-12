@@ -19,14 +19,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ScheduleViewController.tableView(_:cellForRowAt:):ScheduleViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "scheduleData?.segments[indexPath.row].arrivalPlatform">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "ApiClient.getSchedule(date:transport:from:to:completion:):ApiClient.swift">
          <PersistentStrings>
             <PersistentString
