@@ -9,10 +9,6 @@ import Foundation
 import UIKit
 import CoreLocation
 
-//protocol ApiClient {
-//    func getSchedule(completion: @escaping)
-//}
-
 class ApiClient {
     
     static let shared = ApiClient()
@@ -35,7 +31,7 @@ class ApiClient {
         
         let url5 = URL(string:"https://api.rasp.yandex.net/v3.0/search/?apikey=c1c3c337-25ac-43e7-96d8-b4b906744736&format=json&from=\(from)&to=\(to)&lang=ru_RU&page=1" + when + transfer)!
         
-        var request = URLRequest(url: url5)
+        var request = URLRequest(url: url)
         print(url)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data else {

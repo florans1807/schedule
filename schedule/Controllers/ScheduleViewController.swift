@@ -237,7 +237,7 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
     
     @IBAction func tapToFindSchedule(_ sender: Any) {
         if let from = fromTextField.text, let to = toTextField.text {
-            if from.isEmpty || to.isEmpty {
+            if false{//from.isEmpty || to.isEmpty {
                 noDirectionAlert()
             } else {
                 scheduleData = nil
@@ -258,6 +258,10 @@ class ScheduleViewController: UIViewController, SetSelectedDirectionOrDate {
     @IBAction func changeDirections(_ sender: Any) {
         let from = fromTextField.text
         let to = toTextField.text
+        let codeFrom = stationCodeFrom
+        let codeTo = stationCodeTo
+        stationCodeFrom = codeTo
+        stationCodeTo = codeFrom
         fromTextField.text = to
         toTextField.text = from
     }
